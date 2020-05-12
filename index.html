@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>pandanistas worlwide sprint 2020</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+
+                        <!-- logo image  -->
+                        <img src="https://pandas.pydata.org/static/img/pandas_white.svg" alt="Logo" style="height: 50px">
+
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#location">Locations</a></li>
+                    <li><a data-scroll href="#partner">Supporters</a></li>
+                    <li><a data-scroll href="#faq">FAQ</a></li>
+                    <li><a data-scroll href="#photos">Photos</a></li>
+
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+
+            <h2>June 20th, 2020</h2>
+
+            <h1 style="font-size: 48px;">pandanistas worldwide sprint 2020</h1>
+
+			<p id="countdown"></p>
+			<script>
+			var countDownDate = new Date("Jun 20, 2020 14:00:00").getTime();
+
+			var x = setInterval(function() {
+			  var now = new Date().getTime();
+			  var distance = countDownDate - now;
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			  document.getElementById("countdown").innerHTML = "" + days + " DAYS " + hours + " HOURS "
+			  + minutes + " MINUTES " + seconds + " SECONDS ";
+
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "";
+			  }
+			}, 1000);
+			</script>
+
+            <a class="btn btn-white" data-scroll href="#location">Join Now</a>
+
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About Us</h3>
+
+                    <p>
+                        pandas is an open source Python library for data manipulation and analysis.
+                        Its popularity is skyrocketing, and it is becoming the de-facto standard for data science and data engineering.
+                        But the number of core developers and contributors did not grow as fast as its popularity, and things like the API documentation
+                        would benefit from some help.
+                    </p>
+
+                    <p>
+                        This is why we are organizing a worldwide sprint, in which we plan to leave the
+                        API documentation for the Series and DataFrame classes in a perfect state.
+                    </p>
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">How does it work?</h3>
+
+                    <p>
+                        The sprint will be divided in different chapters. Every chapter has a different website,
+                        usually a meetup.com group, where the sprint is coordinated. Find your chapter, and check
+                        there the venue, meeting time, etc.
+                    </p>
+
+                    <h4>Before the sprint</h4>
+
+                    <ul class="list-arrow-right">
+                        <li>Bring your own laptop</li>
+                        <li><a href="https://python-sprints.github.io/pandas/guide/pandas_setup.html">Set up your environment</a></li>
+                        <li>Make sure you RSVP and get a spot before attending</li>
+                        <li>Join the <a href="https://gitter.im/py-sprints/pandas-doc">Gitter channel</a> of the sprint</li>
+                    </ul>
+
+                    <figure>
+                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                    </figure>
+
+                    <h4>During the sprint</h4>
+
+                    <ul class="list-arrow-right">
+                        <li>Go to the sprint location at the starting time</li>
+                        <li>Organizers will provide information, and there is <a href="https://python-sprints.github.io/pandas/guide/index.html">documentation</a></li>
+                        <li>Discuss on the <a href="https://gitter.im/py-sprints/pandas-doc">Gitter channel</a></li>
+                        <li>Share your experience and photos in social networks using <b>#pandasSprint</b></li>
+                        <li>Thank the local sponsor for their support (in person and in social media)</li>
+                        <li>
+                            Be respectful, no form of harassment or discrimination is tolerated
+                            <ul><li style="list-style-type: none;">Read the full <a href="https://pydata.org/code-of-conduct.html">Code of conduct</a></li></ul>
+                        </li>
+                    </ul>
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-book"></i>
+                    <h3>+1,300<br>Documentation pages</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>+30<br>Cities</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-person-stalker"></i>
+                    <h3>+500<br>Pythonistas</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-clock"></i>
+                    <h3>6<br>Hours</h3>
+
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Locations</h3>
+                    <address>
+                        <p>Click on the markers in the map for exact times and locations.</p>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+					<div id="map" style="height: 450px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="partner" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">With the support of</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <a class="partner-box partner-box-big partner-box-2" href="https://www.numfocus.org/"></a>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            </div>
+    </section>
+
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">FAQ</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingZero">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero"> Is this sprint for me ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseZero" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingZero">
+                                <div class="panel-body">
+                                    <p class="panel-body">The sprints are open to everybody. Knowledge of Python, Pandas and Git is required to be able to contribute.</p>
+                                    <p class="panel-body">We want the sprints to be inclusive and diverse. If you think you are part of an underrepresented minority (because of gender, age, race...), please contact your organizer to have priority in getting a spot.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Where is the sprint happening ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p class="panel-body">There are many locations available, check the <a href="#location">locations</a> section.</p>
+                                    <p class="panel-body">If there is no location near you, please get in touch at <a href="mailto:py.sprints@gmail.com">py.sprints@gmail.com</a>, and we'll help you organize one.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> When is the sprint ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <p class="panel-body">Most sprints will start around 10am (in location time). Check the <a href="#location">locations</a> section to see the exact hour in your chapter.</p>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> I want to organize a chapter, how can I do it ?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body"></div>
+                                    <p class="panel-body">Please get in touch at <a href="mailto:py.sprints@gmail.com">py.sprints@gmail.com</a>, and we'll help you and provide all the information you need.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Photos of past Python sprints</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+
+                        <li class="grid-item grid-item-sm-6">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-4.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.jpg">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-9.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info" style="font-size: 10px;">Template by <a href="http://technextit.com">Technext Limited</a></p>
+                    <ul class="social-block">
+                        <li><a href="https://twitter.com/py_sprints/"><i class="ion-social-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
